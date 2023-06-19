@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: green
+        }
+
+        .ronaldo {
+            width: 160px;
+            height: 300px;
+            background-image: url(ron.png);
+            background-size: cover;
+            transition: .4s;
+            filter: drop-shadow(0 0 5px black);
+            transform: translate(0);
+        }
+        .ronaldo:hover{
+            scale: 1.03;
+            filter: drop-shadow(0 0 25px black);
+            transform: translate(30px, 450px);
+        }
+
+        .top {
+            width: 220px;
+            height: 220px;
+            background-image: url(to.png);
+            background-size: cover;
+            transition: .4s;
+            filter: drop-shadow(0 0 5px black);
+            transform: translate(0);
+        }
+        .top:hover{
+            scale: 1.03;
+            filter: drop-shadow(0 0 25px black);
+            transform: translate(30px, 450px);
+        }
+
+        .qapi {
+            width: 220px;
+            height: 220px;
+            background-image: url(qapi.jpg);
+            background-size: cover;
+            background-position: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ronaldo"></div><br>
+    <div class="top"></div>
+    <div class="qapi"></div>
+</body>
+
+</html>
