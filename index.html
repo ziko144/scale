@@ -1,142 +1,112 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ronaldo</title>
+    <title>Futbol</title>
     <link rel="shortcut icon" href="top.png" type="image/x-icon">
     <style>
-        body {
-            background-image: url(st.jpg);
-            background-size: cover;
-            background-position: center;
-            height: 500px;
+        * {
+            margin: 0;
+            padding: 0;
         }
 
         body,
         html {
-            width: 100%;
             height: 100%;
         }
 
-        .zakir {
-            width: 100%;
-            height: 100%;
+        body {
+            background-image: url(123.jpg);
+        }
 
+        .meydan {
+            height: 100%;
+            width: 100%;
         }
 
         .ronaldo {
-
-            background-image: url(r.png);
-
-            width: 300px;
-
-            height: 600px;
-
-            background-size: cover;
-
             float: left;
-
-            margin-top: 460px;
-
-            margin-left: 350px;
-        }
-
-        .ronaldo {
-
+            height: 250px;
+            width: 250px;
+            background-image: url(r.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: 150px;
+            margin-left: 150px;
             transition: .4s;
-
             transform: rotateZ(0);
-
-
         }
 
         .ronaldo:hover {
-
-            scale: 1.03;
-
+            scale: 1;
             transform: rotateZ(-50deg);
-
-
-
         }
 
         .top {
 
+            height: 50px;
+            width: 50px;
             background-image: url(top.png);
-
-            width: 100px;
-
-            height: 100px;
-
             background-size: cover;
-
-            margin-top: 900px;
-
-            margin-left: 500px;
-
             position: absolute;
-
-            transition: .5s;
-
-            position: absolute;
-
+            margin-top: 330px;
+            margin-left: 250px;
+            transition: .4s;
             transform: translate(0 0);
+        }
 
-
-
+        h1{
+            scale: 0;
         }
 
         .top:hover {
-
+            scale: 1;
             transform: translate(550px, 20px);
 
-            scale: 1.1;
+        }
 
+        .top:hover+h1{
+            scale: 1;
+            transition: 1s;
         }
 
         .qapi {
-
-            width: 700px;
-
-            height: 700px;
-
-            transition: .4s;
-
-            background-size: cover;
-
-            position: absolute;
-
-            margin-left: 900px;
-
-            margin-top: 500px;
-
+            float: left;
+            height: 500px;
+            width: 600px;
             background-image: url(qapi.png);
+            background-size: cover;
+            margin: auto;
+            transition: .4s;
+        }
 
+        .qapici {
+            float: left;
+            height: 250px;
+            width: 250px;
+            background-image: url(qapici.png);
+            background-size: cover;
+            position: absolute;
+            margin-top: 150px;
+            margin-left: 50px;
         }
     </style>
-
 </head>
 
 <body>
-    <div class="ziko">
-
-        <div class="zakir">
-            <div class="ronaldo"></div>
-
-            <div class="qapi"></div>
-        </div>
-
+    <div class="meydan">
+        <div class="ronaldo"></div>
         <div class="top"></div>
-
-
-
-
-
-
+        <h1>GOAL!</h1>
+        <div class="qapi">
+            <div class="qapici"></div>
+        </div>
     </div>
+
 
 </body>
 
